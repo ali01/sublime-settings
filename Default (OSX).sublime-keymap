@@ -33,6 +33,10 @@
     { "keys": ["ctrl+g"], "command": "show_overlay",
         "args": {"overlay": "goto", "text": ":"} },
 
+    // full screen
+    { "keys": ["super+ctrl+f"], "command": "noop" }, // disable: used for find
+    { "keys": ["super+ctrl+shift+f"], "command": "toggle_distraction_free" },
+
     // code navigation
     { "keys": ["ctrl+minus"], "command": "jump_back" },
     { "keys": ["ctrl+shift+minus"], "command": "jump_forward" },
@@ -43,7 +47,7 @@
     // find: basic
     { "keys": ["super+f"], "command": "show_panel",
         "args": {"panel": "find", "reverse": false} },
-    { "keys": ["super+alt+f"], "command": "show_panel",
+    { "keys": ["super+ctrl+f"], "command": "show_panel",
         "args": {"panel": "replace", "reverse": false} },
     { "keys": ["super+g"], "command": "find_next" },
     { "keys": ["super+shift+g"], "command": "find_prev" },
