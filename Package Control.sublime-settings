@@ -1,0 +1,10 @@
+{
+	"installed_packages":
+	[
+		"Clang Format",
+		"GoSublime",
+		"JSONLint",
+		"Protocol Buffer Syntax",
+		"Toggle the View Read-Only"
+	]
+}

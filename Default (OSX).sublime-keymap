@@ -1,0 +1,111 @@
+[
+    { "keys": ["super+shift+a"], "command": "focus_neighboring_group",
+        "args": {"forward": false} },
+    { "keys": ["super+shift+e"], "command": "focus_neighboring_group" },
+    { "keys": ["super+ctrl+a"], "command": "prev_view" },
+    { "keys": ["super+ctrl+e"], "command": "next_view" },
+    { "keys": ["super+shift+["], "command": "fold" },
+    { "keys": ["super+shift+]"], "command": "unfold" },
+    { "keys": ["super+ctrl+q"], "command":"toggle_readonly"},
+
+    { "keys": ["super+l"], "command": "expand_selection",
+        "args": {"to": "line"} },
+    { "keys": ["super+d"], "command": "find_under_expand" },
+    { "keys": ["super+k", "super+d"], "command": "find_under_expand_skip" },
+    { "keys": ["super+shift+space"], "command": "expand_selection",
+        "args": {"to": "scope"} },
+    { "keys": ["ctrl+shift+m"], "command": "expand_selection",
+        "args": {"to": "brackets"} },
+    { "keys": ["ctrl+m"], "command": "move_to", "args": {"to": "brackets"} },
+    { "keys": ["super+shift+j"], "command": "expand_selection",
+        "args": {"to": "indentation"} },
+    { "keys": [], "command": "expand_selection", "args": {"to": "tag"} },
+
+    { "keys": ["super+t"], "command": "show_overlay",
+        "args": {"overlay": "goto", "show_files": true} },
+    { "keys": ["super+p"], "command": "show_overlay",
+        "args": {"overlay": "goto", "show_files": true} },
+    { "keys": ["super+shift+p"], "command": "show_overlay",
+        "args": {"overlay": "command_palette"} },
+    { "keys": ["super+ctrl+p"], "command": "prompt_select_workspace" },
+    { "keys": ["super+r"], "command": "show_overlay",
+        "args": {"overlay": "goto", "text": "@"} },
+    { "keys": ["ctrl+g"], "command": "show_overlay",
+        "args": {"overlay": "goto", "text": ":"} },
+
+    // code navigation
+    { "keys": ["ctrl+minus"], "command": "jump_back" },
+    { "keys": ["ctrl+shift+minus"], "command": "jump_forward" },
+
+
+    // -- find and replace --
+
+    // find: basic
+    { "keys": ["super+f"], "command": "show_panel",
+        "args": {"panel": "find", "reverse": false} },
+    { "keys": ["super+alt+f"], "command": "show_panel",
+        "args": {"panel": "replace", "reverse": false} },
+    { "keys": ["super+g"], "command": "find_next" },
+    { "keys": ["super+shift+g"], "command": "find_prev" },
+    { "keys": ["super+e"], "command": "slurp_find_string" },
+
+    // find: across files
+    { "keys": ["super+shift+f"], "command": "show_panel",
+        "args": {"panel": "find_in_files"} },
+    { "keys": ["f4"], "command": "next_result" },
+    { "keys": ["shift+f4"], "command": "prev_result" },
+
+    // find: symbols
+    { "keys": ["f12"], "command": "goto_definition" },
+    { "keys": ["super+alt+down"], "command": "goto_definition" },
+    { "keys": ["super+shift+r"], "command": "goto_symbol_in_project" },
+
+    // find: word under caret
+    { "keys": [], "command": "find_under" }, // obviated by slurp_find_string
+    { "keys": ["ctrl+shift+g"], "command": "find_all_under" },
+    { "keys": [], "command": "find_under_prev" }, // obviated by find_prev
+
+    // replace
+    { "keys": ["ctrl+super+shift+g"], "command": "replace_next" },
+    { "keys": ["ctrl+super+shift+alt+g"], "command": "replace_all"},
+    { "keys": ["ctrl+alt+e"], "command": "slurp_replace_string" },
+
+    // Find panel key bindings
+    { "keys": ["enter"], "command": "hide_panel", "context":
+        [{"key": "panel", "operand": "find"}, {"key": "panel_has_focus"}]
+    },
+    { "keys": ["shift+enter"], "command": "find_all",
+        "args": {"close_panel": true},
+        "context": [
+            {"key": "panel", "operand": "find"},
+            {"key": "panel_has_focus"}
+        ]
+    },
+    { "keys": ["alt+enter"], "command": "noop" },
+
+    // Replace panel key bindings
+    { "keys": ["enter"], "command": "hide_panel", "context":
+        [{"key": "panel", "operand": "replace"}, {"key": "panel_has_focus"}]
+    },
+    { "keys": ["shift+enter"], "command": "find_all",
+        "args": {"close_panel": true},
+        "context": [
+            {"key": "panel", "operand": "replace"},
+            {"key": "panel_has_focus"}
+        ]
+    },
+    { "keys": ["ctrl+super+shift+enter"], "command": "replace_all",
+        "args": {"close_panel": true},
+        "context": [
+            {"key": "panel", "operand": "replace"},
+            {"key": "panel_has_focus"}
+        ]
+    },
+    { "keys": ["alt+enter"], "command": "noop"},
+
+    // disable incremental find bindings -- obviated by regular find panel
+    { "keys": [], "command": "show_panel",
+        "args": {"panel": "incremental_find", "reverse": false} },
+    { "keys": [], "command": "show_panel",
+        "args": {"panel": "incremental_find", "reverse": true} }
+]
