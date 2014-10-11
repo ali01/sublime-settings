@@ -40,6 +40,52 @@
     // code navigation
     { "keys": ["ctrl+minus"], "command": "jump_back" },
     { "keys": ["ctrl+shift+minus"], "command": "jump_forward" },
+    { "keys": ["ctrl+super+s"], "command": "toggle_side_bar" },
+
+
+    // -- buffer motion --
+
+    // word motion and selection
+    { "keys": ["ctrl+left"], "command": "move",
+        "args": {"by": "subwords", "forward": false} },
+    { "keys": ["ctrl+right"], "command": "move",
+        "args": {"by": "subword_ends", "forward": true} },
+    { "keys": ["ctrl+shift+left"], "command": "move",
+        "args": {"by": "subwords", "forward": false, "extend": true} },
+    { "keys": ["ctrl+shift+right"], "command": "move",
+        "args": {"by": "subword_ends", "forward": true, "extend": true} },
+
+    // with alt key: same as above
+    { "keys": ["ctrl+alt+left"], "command": "move",
+        "args": {"by": "subwords", "forward": false} },
+    { "keys": ["ctrl+alt+right"], "command": "move",
+        "args": {"by": "subword_ends", "forward": true} },
+    { "keys": ["ctrl+alt+shift+left"], "command": "move",
+        "args": {"by": "subwords", "forward": false, "extend": true} },
+    { "keys": ["ctrl+alt+shift+right"], "command": "move",
+        "args": {"by": "subword_ends", "forward": true, "extend": true} },
+
+    // multiple carets
+    { "keys": ["ctrl+shift+up"], "command": "select_lines",
+        "args": {"forward": false} },
+    { "keys": ["ctrl+shift+down"], "command": "select_lines",
+        "args": {"forward": true} },
+
+    // line motion
+    { "keys": ["ctrl+alt+up"], "command": "scroll_lines",
+        "args": {"amount": 1.0} },
+    { "keys": ["ctrl+alt+down"], "command": "scroll_lines",
+        "args": {"amount": -1.0} },
+
+    // emacs key-bindings
+    { "keys": ["shift+alt+f"], "command": "move",
+        "args": {"by": "subword_ends", "forward": true, "extend": true} },
+    { "keys": ["shift+alt+b"], "command": "move",
+        "args": {"by": "subword_ends", "forward": false, "extend": true} },
+    { "keys": ["ctrl+shift+p"], "command": "move",
+        "args": {"by": "lines", "forward": false, "extend": true} },
+    { "keys": ["ctrl+shift+n"], "command": "move",
+        "args": {"by": "lines", "forward": true, "extend": true} },
 
 
     // -- find and replace --
