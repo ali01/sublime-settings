@@ -93,6 +93,9 @@
     { "keys": ["super+ctrl+n"], "command": "scroll_lines",
         "args": {"amount": -16.0} },
 
+    { "keys": ["alt+v"], "command": "noop"},
+    { "keys": ["ctrl+v"], "command": "noop"},
+
     // multiple carets
     { "keys": ["ctrl+super+shift+p"], "command": "select_lines",
         "args": {"forward": false} },
