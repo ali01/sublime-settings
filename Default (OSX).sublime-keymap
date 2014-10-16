@@ -47,10 +47,25 @@
     { "keys": ["alt+up"], "command": "noop" },
     { "keys": ["alt+down"], "command": "noop" },
 
+    { "keys": ["super+left"], "command": "noop" },
+    { "keys": ["super+right"], "command": "noop" },
+    { "keys": ["super+up"], "command": "noop" },
+    { "keys": ["super+down"], "command": "noop" },
+
+    { "keys": ["super+shift+left"], "command": "noop" },
+    { "keys": ["super+shift+right"], "command": "noop" },
+    { "keys": ["super+shift+up"], "command": "noop" },
+    { "keys": ["super+shift+down"], "command": "noop" },
+
     { "keys": ["shift+left"], "command": "noop" },
     { "keys": ["shift+right"], "command": "noop" },
     { "keys": ["shift+up"], "command": "noop" },
     { "keys": ["shift+down"], "command": "noop" },
+
+    { "keys": ["shift+alt+left"], "command": "noop" },
+    { "keys": ["shift+alt+right"], "command": "noop" },
+    { "keys": ["shift+alt+up"], "command": "noop" },
+    { "keys": ["shift+alt+down"], "command": "noop" },
 
 
     // full screen
@@ -71,24 +86,24 @@
     // -- buffer motion --
 
     // word motion and selection
-    { "keys": ["ctrl+left"], "command": "move",
-        "args": {"by": "subwords", "forward": false} },
-    { "keys": ["ctrl+right"], "command": "move",
-        "args": {"by": "subword_ends", "forward": true} },
-    { "keys": ["ctrl+shift+left"], "command": "move",
-        "args": {"by": "subwords", "forward": false, "extend": true} },
-    { "keys": ["ctrl+shift+right"], "command": "move",
-        "args": {"by": "subword_ends", "forward": true, "extend": true} },
+    // { "keys": ["ctrl+left"], "command": "move",
+    //     "args": {"by": "subwords", "forward": false} },
+    // { "keys": ["ctrl+right"], "command": "move",
+    //     "args": {"by": "subword_ends", "forward": true} },
+    // { "keys": ["ctrl+shift+left"], "command": "move",
+    //     "args": {"by": "subwords", "forward": false, "extend": true} },
+    // { "keys": ["ctrl+shift+right"], "command": "move",
+    //     "args": {"by": "subword_ends", "forward": true, "extend": true} },
 
     // with alt key: same as above
-    { "keys": ["ctrl+alt+left"], "command": "move",
-        "args": {"by": "subwords", "forward": false} },
-    { "keys": ["ctrl+alt+right"], "command": "move",
-        "args": {"by": "subword_ends", "forward": true} },
-    { "keys": ["ctrl+alt+shift+left"], "command": "move",
-        "args": {"by": "subwords", "forward": false, "extend": true} },
-    { "keys": ["ctrl+alt+shift+right"], "command": "move",
-        "args": {"by": "subword_ends", "forward": true, "extend": true} },
+    // { "keys": ["ctrl+alt+left"], "command": "move",
+    //     "args": {"by": "subwords", "forward": false} },
+    // { "keys": ["ctrl+alt+right"], "command": "move",
+    //     "args": {"by": "subword_ends", "forward": true} },
+    // { "keys": ["ctrl+alt+shift+left"], "command": "move",
+    //     "args": {"by": "subwords", "forward": false, "extend": true} },
+    // { "keys": ["ctrl+alt+shift+right"], "command": "move",
+    //     "args": {"by": "subword_ends", "forward": true, "extend": true} },
 
     // multiple carets
     { "keys": ["ctrl+shift+up"], "command": "select_lines",
