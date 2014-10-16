@@ -67,6 +67,11 @@
     { "keys": ["shift+alt+up"], "command": "noop" },
     { "keys": ["shift+alt+down"], "command": "noop" },
 
+    { "keys": ["ctrl+alt+left"], "command": "noop" },
+    { "keys": ["ctrl+alt+right"], "command": "noop" },
+    { "keys": ["ctrl+alt+up"], "command": "noop" },
+    { "keys": ["ctrl+alt+down"], "command": "noop" },
+
 
     // full screen
     { "keys": ["super+ctrl+f"], "command": "noop" }, // disable: used for find
@@ -77,11 +82,22 @@
     { "keys": ["ctrl+shift+minus"], "command": "jump_forward" },
     { "keys": ["ctrl+super+s"], "command": "toggle_side_bar" },
 
-    { "keys": ["super+ctrl+n"], "command": "next_bookmark" },
-    { "keys": ["super+ctrl+shift+n"], "command": "prev_bookmark" },
+    { "keys": ["ctrl+alt+n"], "command": "next_bookmark" },
+    { "keys": ["ctrl+alt+p"], "command": "prev_bookmark" },
     { "keys": ["super+ctrl+b"], "command": "toggle_bookmark" },
     { "keys": ["super+ctrl+c"], "command": "clear_bookmarks" },
     { "keys": ["alt+f2"], "command": "select_all_bookmarks" },
+
+    { "keys": ["super+ctrl+p"], "command": "scroll_lines",
+        "args": {"amount": 16.0} },
+    { "keys": ["super+ctrl+n"], "command": "scroll_lines",
+        "args": {"amount": -16.0} },
+
+    // multiple carets
+    { "keys": ["ctrl+super+shift+p"], "command": "select_lines",
+        "args": {"forward": false} },
+    { "keys": ["ctrl+super+shift+n"], "command": "select_lines",
+        "args": {"forward": true} },
 
     // -- buffer motion --
 
@@ -105,17 +121,11 @@
     // { "keys": ["ctrl+alt+shift+right"], "command": "move",
     //     "args": {"by": "subword_ends", "forward": true, "extend": true} },
 
-    // multiple carets
-    { "keys": ["ctrl+shift+up"], "command": "select_lines",
-        "args": {"forward": false} },
-    { "keys": ["ctrl+shift+down"], "command": "select_lines",
-        "args": {"forward": true} },
-
     // line motion
-    { "keys": ["ctrl+alt+up"], "command": "scroll_lines",
-        "args": {"amount": 1.0} },
-    { "keys": ["ctrl+alt+down"], "command": "scroll_lines",
-        "args": {"amount": -1.0} },
+    // { "keys": ["ctrl+alt+up"], "command": "scroll_lines",
+    //     "args": {"amount": 1.0} },
+    // { "keys": ["ctrl+alt+down"], "command": "scroll_lines",
+    //     "args": {"amount": -1.0} },
 
     // emacs key-bindings
     { "keys": ["shift+alt+f"], "command": "move",
