@@ -42,6 +42,11 @@
     { "keys": ["ctrl+shift+minus"], "command": "jump_forward" },
     { "keys": ["ctrl+super+s"], "command": "toggle_side_bar" },
 
+    { "keys": ["super+ctrl+n"], "command": "next_bookmark" },
+    { "keys": ["super+ctrl+shift+n"], "command": "prev_bookmark" },
+    { "keys": ["super+ctrl+b"], "command": "toggle_bookmark" },
+    { "keys": ["super+ctrl+c"], "command": "clear_bookmarks" },
+    { "keys": ["alt+f2"], "command": "select_all_bookmarks" },
 
     // -- buffer motion --
 
