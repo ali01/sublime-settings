@@ -3,3 +3,4 @@ GoSublime/
 Package Control.cache/
 Package Control.last-run
 Package Control.system-ca-bundle
+*.sublime-workspace
