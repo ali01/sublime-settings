@@ -114,10 +114,10 @@
     { "keys": ["ctrl+v"], "command": "noop"},
 
     // multiple carets
-    // { "keys": ["ctrl+super+shift+p"], "command": "select_lines",
-    //     "args": {"forward": false} },
-    // { "keys": ["ctrl+super+shift+n"], "command": "select_lines",
-    //     "args": {"forward": true} },
+    { "keys": ["ctrl+alt+p"], "command": "select_lines",
+        "args": {"forward": false} },
+    { "keys": ["ctrl+alt+n"], "command": "select_lines",
+        "args": {"forward": true} },
 
     // -- buffer motion --
 
