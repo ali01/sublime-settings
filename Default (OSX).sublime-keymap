@@ -41,6 +41,8 @@
 
     { "keys": ["ctrl+left"], "command": "noop" },
     { "keys": ["ctrl+right"], "command": "noop" },
+    { "keys": ["ctrl+up"], "command": "noop" },
+    { "keys": ["ctrl+down"], "command": "noop" },
 
     { "keys": ["alt+left"], "command": "noop" },
     { "keys": ["alt+right"], "command": "noop" },
@@ -72,6 +74,12 @@
     { "keys": ["ctrl+alt+up"], "command": "noop" },
     { "keys": ["ctrl+alt+down"], "command": "noop" },
 
+    { "keys": ["ctrl+shift+left"], "command": "noop"},
+    { "keys": ["ctrl+shift+right"], "command": "noop"},
+    { "keys": ["ctrl+shift+up"], "command": "noop"},
+    { "keys": ["ctrl+shift+down"], "command": "noop"},
+
+
 
     // full screen
     { "keys": ["super+ctrl+f"], "command": "noop" }, // disable: used for find
@@ -93,42 +101,22 @@
     { "keys": ["super+ctrl+n"], "command": "scroll_lines",
         "args": {"amount": -16.0} },
 
+    { "keys": ["ctrl+super+shift+p"], "command": "move",
+        "args": {"by": "pages", "forward": false } },
+    { "keys": ["ctrl+super+shift+n"], "command": "move",
+        "args": {"by": "pages", "forward": true} },
+
+
     { "keys": ["alt+v"], "command": "noop"},
     { "keys": ["ctrl+v"], "command": "noop"},
 
     // multiple carets
-    { "keys": ["ctrl+super+shift+p"], "command": "select_lines",
-        "args": {"forward": false} },
-    { "keys": ["ctrl+super+shift+n"], "command": "select_lines",
-        "args": {"forward": true} },
+    // { "keys": ["ctrl+super+shift+p"], "command": "select_lines",
+    //     "args": {"forward": false} },
+    // { "keys": ["ctrl+super+shift+n"], "command": "select_lines",
+    //     "args": {"forward": true} },
 
     // -- buffer motion --
-
-    // word motion and selection
-    // { "keys": ["ctrl+left"], "command": "move",
-    //     "args": {"by": "subwords", "forward": false} },
-    // { "keys": ["ctrl+right"], "command": "move",
-    //     "args": {"by": "subword_ends", "forward": true} },
-    // { "keys": ["ctrl+shift+left"], "command": "move",
-    //     "args": {"by": "subwords", "forward": false, "extend": true} },
-    // { "keys": ["ctrl+shift+right"], "command": "move",
-    //     "args": {"by": "subword_ends", "forward": true, "extend": true} },
-
-    // with alt key: same as above
-    // { "keys": ["ctrl+alt+left"], "command": "move",
-    //     "args": {"by": "subwords", "forward": false} },
-    // { "keys": ["ctrl+alt+right"], "command": "move",
-    //     "args": {"by": "subword_ends", "forward": true} },
-    // { "keys": ["ctrl+alt+shift+left"], "command": "move",
-    //     "args": {"by": "subwords", "forward": false, "extend": true} },
-    // { "keys": ["ctrl+alt+shift+right"], "command": "move",
-    //     "args": {"by": "subword_ends", "forward": true, "extend": true} },
-
-    // line motion
-    // { "keys": ["ctrl+alt+up"], "command": "scroll_lines",
-    //     "args": {"amount": 1.0} },
-    // { "keys": ["ctrl+alt+down"], "command": "scroll_lines",
-    //     "args": {"amount": -1.0} },
 
     // emacs key-bindings
     { "keys": ["shift+alt+f"], "command": "move",
@@ -138,6 +126,10 @@
     { "keys": ["ctrl+shift+p"], "command": "move",
         "args": {"by": "lines", "forward": false, "extend": true} },
     { "keys": ["ctrl+shift+n"], "command": "move",
+        "args": {"by": "lines", "forward": true, "extend": true} },
+    { "keys": ["ctrl+shift+alt+p"], "command": "move",
+        "args": {"by": "lines", "forward": false, "extend": true} },
+    { "keys": ["ctrl+shift+alt+n"], "command": "move",
         "args": {"by": "lines", "forward": true, "extend": true} },
 
 
