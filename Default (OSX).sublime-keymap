@@ -32,7 +32,7 @@
     { "keys": ["super+ctrl+p"], "command": "prompt_select_workspace" },
     { "keys": ["super+r"], "command": "show_overlay",
         "args": {"overlay": "goto", "text": "@"} },
-    { "keys": ["ctrl+g"], "command": "show_overlay",
+    { "keys": ["ctrl+l"], "command": "show_overlay",
         "args": {"overlay": "goto", "text": ":"} },
 
     // no arrow keys
@@ -108,6 +108,7 @@
     { "keys": ["ctrl+super+shift+n"], "command": "move",
         "args": {"by": "pages", "forward": true} },
 
+    { "keys": ["ctrl+g"], "command": "show_at_center" },
 
     { "keys": ["alt+v"], "command": "noop"},
     { "keys": ["ctrl+v"], "command": "noop"},
