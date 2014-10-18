@@ -124,6 +124,7 @@
         "args": {"by": "subwords", "forward": false},
         "context":
         [
+            { "key": "num_selections", "operator": "equal", "operand": 1 },
             { "key": "has_next_field", "operator": "equal", "operand": false },
             { "key": "panel_visible", "operator": "equal", "operand": false },
             { "key": "overlay_visible", "operator": "equal", "operand": false },
