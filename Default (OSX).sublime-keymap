@@ -114,9 +114,9 @@
     { "keys": ["ctrl+v"], "command": "noop"},
 
     // multiple carets
-    { "keys": ["ctrl+alt+p"], "command": "select_lines",
+    { "keys": ["ctrl+alt+shift+p"], "command": "select_lines",
         "args": {"forward": false} },
-    { "keys": ["ctrl+alt+n"], "command": "select_lines",
+    { "keys": ["ctrl+alt+shift+n"], "command": "select_lines",
         "args": {"forward": true} },
 
     // escape key
@@ -145,11 +145,6 @@
         "args": {"by": "lines", "forward": false, "extend": true} },
     { "keys": ["ctrl+shift+n"], "command": "move",
         "args": {"by": "lines", "forward": true, "extend": true} },
-    { "keys": ["ctrl+shift+alt+p"], "command": "move",
-        "args": {"by": "lines", "forward": false, "extend": true} },
-    { "keys": ["ctrl+shift+alt+n"], "command": "move",
-        "args": {"by": "lines", "forward": true, "extend": true} },
-
 
     // -- find and replace --
 
