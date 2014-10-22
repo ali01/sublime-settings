@@ -81,6 +81,12 @@
     { "keys": ["ctrl+shift+up"], "command": "noop"},
     { "keys": ["ctrl+shift+down"], "command": "noop"},
 
+    { "keys": ["ctrl+super+left"], "command": "noop" },
+    { "keys": ["ctrl+super+right"], "command": "noop" },
+
+    // arrow keys allowed here
+    { "keys": ["ctrl+super+up"], "command": "swap_line_up" },
+    { "keys": ["ctrl+super+down"], "command": "swap_line_down" },
 
 
     // full screen
