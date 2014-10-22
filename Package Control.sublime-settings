@@ -2,6 +2,7 @@
 	"installed_packages":
 	[
 		"Clang Format",
+		"DashDoc",
 		"GoSublime",
 		"JSONLint",
 		"Protocol Buffer Syntax",
