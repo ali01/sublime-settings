@@ -8,6 +8,8 @@
     { "keys": ["super+shift+]"], "command": "unfold" },
     { "keys": ["super+ctrl+q"], "command":"toggle_readonly"},
     { "keys": ["super+ctrl+m"], "command": "toggle_minimap"},
+    { "keys": ["super+ctrl+w"], "command": "toggle_setting",
+        "args": {"setting": "word_wrap"}},
 
     { "keys": ["super+l"], "command": "expand_selection",
         "args": {"to": "line"} },
