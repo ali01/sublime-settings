@@ -706,6 +706,32 @@
 				<string>#ff6666</string>
 			</dict>
 		</dict>
+		<dict>
+			<key>name</key>
+			<string>Diff insertion</string>
+			<key>scope</key>
+			<string>markup.inserted.diff, meta.diff.header.to-file</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#aad2ac</string>
+				<key>background</key>
+				<string>#3e614c</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Diff deletion</string>
+			<key>scope</key>
+			<string>markup.deleted.diff, meta.diff.header.from-file</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#eaafb0</string>
+				<key>background</key>
+				<string>#8b2d2d</string>
+			</dict>
+		</dict>
 	</array>
 	<key>uuid</key>
 	<string>71D40D9D-AE48-11D9-920A-000D93589AF6</string>

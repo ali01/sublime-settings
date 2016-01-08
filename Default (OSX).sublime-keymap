@@ -30,6 +30,10 @@
         "args": {"overlay": "goto", "show_files": true} },
     { "keys": ["super+p"], "command": "show_overlay",
         "args": {"overlay": "goto", "show_files": true} },
+    { "keys": ["alt+t"], "command": "extended_switcher",
+        "args": {"list_mode": "window"} },
+    { "keys": ["ctrl+alt+t"], "command": "extended_switcher",
+        "args": {"list_mode": "active_group"} },
     { "keys": ["super+shift+p"], "command": "show_overlay",
         "args": {"overlay": "command_palette"} },
     { "keys": ["super+ctrl+p"], "command": "prompt_select_workspace" },
@@ -94,12 +98,12 @@
 
     // full screen
     { "keys": ["super+ctrl+f"], "command": "noop" }, // disable: used for find
-    { "keys": ["super+ctrl+shift+f"], "command": "toggle_distraction_free" },
+    { "keys": ["super+ctrl+shift+f"], "command": "noop" },
 
     // code navigation
     { "keys": ["ctrl+minus"], "command": "jump_back" },
     { "keys": ["ctrl+shift+minus"], "command": "jump_forward" },
-    { "keys": ["ctrl+super+s"], "command": "toggle_side_bar" },
+    { "keys": ["ctrl+shift+super+s"], "command": "toggle_side_bar" },
 
     { "keys": ["ctrl+alt+n"], "command": "next_bookmark" },
     { "keys": ["ctrl+alt+p"], "command": "prev_bookmark" },
@@ -233,5 +237,15 @@
     { "keys": [], "command": "show_panel",
         "args": {"panel": "incremental_find", "reverse": false} },
     { "keys": [], "command": "show_panel",
-        "args": {"panel": "incremental_find", "reverse": true} }
+        "args": {"panel": "incremental_find", "reverse": true} },
+
+    // disable code folding
+    { "keys": ["super+alt+["], "command": "noop" },
+    { "keys": ["super+alt+]"], "command": "noop" },
+
+    // packages
+    { "keys": ["super+ctrl+h"], "command": "switch_file_deluxe",
+        "args": {"extensions":
+        [".cpp", ".cxx", ".cc", ".c", "Qt.cpp", "Qt.h", ".hpp", ".hxx", ".h", "_p.h",
+         "_p_p.h", ".ipp", ".inl", ".m", ".mm"]} }
 ]
