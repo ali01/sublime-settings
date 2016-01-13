@@ -9,22 +9,20 @@
 	"font_size": 12,
 	"highlight_line": true,
 	"ignore_inodes": true,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
 	"indent_to_bracket": true,
 	"margin": 4,
 	"overlay_scroll_bars": "enabled",
-	"rulers":
-	[
-		80
-	],
+	"rulers": [ 80 ],
 	"save_on_focus_lost": false,
-	"scroll_past_end": true,
+	"scroll_past_end": false,
 	"show_full_path": true,
 	"tab_size": 2,
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"wrap_width": 80
+	"wrap_width": 80,
+  "use_simple_full_screen": true,
+  "highlight_modified_tabs": true,
+  "show_encoding": true,
+  "show_line_endings": true,
+  "remember_full_screen": true,
 }
