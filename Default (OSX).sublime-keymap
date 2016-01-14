@@ -98,7 +98,7 @@
 
     // full screen
     { "keys": ["super+ctrl+f"], "command": "noop" }, // disable: used for find
-    { "keys": ["super+ctrl+shift+f"], "command": "noop" },
+    { "keys": ["super+ctrl+shift+f"], "command": "toggle_full_screen" },
 
     // code navigation
     { "keys": ["ctrl+minus"], "command": "jump_back" },
