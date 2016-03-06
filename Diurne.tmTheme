@@ -641,12 +641,10 @@
 			<string>markup.heading</string>
 			<key>settings</key>
 			<dict>
-				<key>background</key>
-				<string>#004080B8</string>
 				<key>fontStyle</key>
-				<string></string>
+				<string>bold</string>
 				<key>foreground</key>
-				<string>#66CCFF</string>
+				<string>#ff033e</string>
 			</dict>
 		</dict>
 		<dict>

@@ -8,11 +8,16 @@
 		"Clang Format",
 		"ColorPicker",
 		"ExtendedTabSwitcher",
+		"google-syntax",
 		"GoSublime",
 		"JSONLint",
 		"Package Control",
 		"Protocol Buffer Syntax",
 		"Switch File Deluxe",
 		"Toggle the View Read-Only"
+	],
+	"repositories":
+	[
+		"https://sublime-text-plugins.corp.google.com/google-packages.json"
 	]
 }
