@@ -10,6 +10,7 @@
     { "keys": ["super+ctrl+m"], "command": "toggle_minimap"},
     { "keys": ["super+shift+ctrl+w"], "command": "toggle_setting",
         "args": {"setting": "word_wrap"}},
+    { "keys": ["super+ctrl+r"], "command": "revert"},
 
     { "keys": ["super+l"], "command": "expand_selection",
         "args": {"to": "line"} },
