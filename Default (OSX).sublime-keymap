@@ -1,4 +1,5 @@
 [
+    { "keys": ["super+shift+s"], "command": "noop" },
     { "keys": ["super+shift+o"], "command": "focus_neighboring_group",
         "args": {"forward": false} },
     { "keys": ["super+shift+u"], "command": "focus_neighboring_group" },
