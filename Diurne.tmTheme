@@ -706,28 +706,46 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Diff insertion</string>
+			<string>diff.header</string>
 			<key>scope</key>
-			<string>markup.inserted.diff, meta.diff.header.to-file</string>
+			<string>meta.diff, meta.diff.header</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#aad2ac</string>
-				<key>background</key>
-				<string>#3e614c</string>
+				<string>#33ccff</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Diff deletion</string>
+			<string>diff.deleted</string>
 			<key>scope</key>
-			<string>markup.deleted.diff, meta.diff.header.from-file</string>
+			<string>markup.deleted</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#eaafb0</string>
-				<key>background</key>
-				<string>#8b2d2d</string>
+				<string>#ff6666</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>diff.inserted</string>
+			<key>scope</key>
+			<string>markup.inserted</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#00cc99</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>diff.changed</string>
+			<key>scope</key>
+			<string>markup.changed</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ffff99</string>
 			</dict>
 		</dict>
 	</array>

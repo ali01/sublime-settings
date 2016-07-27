@@ -1,4 +1,6 @@
 [
+    { "keys": ["super+shift+ctrl+w"], "command": "copy_path" },
+
     { "keys": ["super+shift+s"], "command": "noop" },
     { "keys": ["super+shift+o"], "command": "focus_neighboring_group",
         "args": {"forward": false} },
@@ -9,7 +11,7 @@
     { "keys": ["super+shift+]"], "command": "unfold" },
     { "keys": ["super+ctrl+q"], "command":"toggle_readonly"},
     { "keys": ["super+ctrl+m"], "command": "toggle_minimap"},
-    { "keys": ["super+shift+ctrl+w"], "command": "toggle_setting",
+    { "keys": [], "command": "toggle_setting",
         "args": {"setting": "word_wrap"}},
     { "keys": ["super+ctrl+r"], "command": "revert"},
 
@@ -101,6 +103,7 @@
     // full screen
     { "keys": ["super+ctrl+f"], "command": "noop" }, // disable: used for find
     { "keys": ["super+ctrl+shift+f"], "command": "toggle_full_screen" },
+    { "keys": ["super+ctrl+shift+alt+f"], "command": "toggle_distraction_free" },
 
     // code navigation
     { "keys": ["ctrl+minus"], "command": "jump_back" },
