@@ -1,6 +1,7 @@
 [
     { "keys": ["super+shift+ctrl+w"], "command": "copy_path" },
-
+    { "keys": ["alt+shift+ctrl+d"], "command": "set_file_type",
+        "args": {"syntax": "Packages/Diff/Diff.sublime-syntax"} },
     { "keys": ["super+shift+s"], "command": "noop" },
     { "keys": ["super+shift+o"], "command": "focus_neighboring_group",
         "args": {"forward": false} },
