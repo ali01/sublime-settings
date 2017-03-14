@@ -113,8 +113,8 @@
 
     { "keys": ["ctrl+alt+n"], "command": "next_bookmark" },
     { "keys": ["ctrl+alt+p"], "command": "prev_bookmark" },
-    { "keys": ["super+ctrl+b"], "command": "toggle_bookmark" },
-    { "keys": ["super+ctrl+c"], "command": "clear_bookmarks" },
+    { "keys": ["super+ctrl+shift+b"], "command": "toggle_bookmark" },
+    { "keys": ["super+ctrl+shift+c"], "command": "clear_bookmarks" },
     { "keys": ["alt+f2"], "command": "select_all_bookmarks" },
 
     { "keys": ["super+ctrl+p"], "command": "scroll_lines",
@@ -151,6 +151,10 @@
                 "operand": false },
         ]
     },
+
+    // project settings
+    { "keys": ["super+ctrl+,"], "command": "open_file",
+        "args": {"file": "${project}"}},
 
     // font size
     { "keys": ["super+equals"], "command": "noop" },
