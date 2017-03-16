@@ -1,0 +1,20 @@
+<snippet>
+  <content><![CDATA[
+py_binary(
+  name = "$1",
+  srcs = [
+    "$2",
+  ],
+  srcs_version = "PY2AND3",
+  deps = [
+    "//learning/brain/public:tensorflow_py",
+    "//learning/brain/public:tensorflow_std_ops",$3
+  ],
+)
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>py_binary_tf</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>
