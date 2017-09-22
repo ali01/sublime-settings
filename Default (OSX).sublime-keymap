@@ -41,7 +41,7 @@
         "args": {"list_mode": "active_group"} },
     { "keys": ["super+shift+p"], "command": "show_overlay",
         "args": {"overlay": "command_palette"} },
-    { "keys": ["super+ctrl+p"], "command": "prompt_select_workspace" },
+    { "keys": ["super+alt+ctrl+w"], "command": "prompt_select_workspace" },
     { "keys": ["super+r"], "command": "show_overlay",
         "args": {"overlay": "goto", "text": "@"} },
     { "keys": ["ctrl+l"], "command": "show_overlay",
@@ -156,7 +156,7 @@
     { "keys": ["super+ctrl+,"], "command": "open_file",
         "args": {"file": "${project}"}},
 
-    { "keys": ["super+ctrl+shift+t"], "command": "new_snippet" },
+    { "keys": ["super+ctrl+alt+t"], "command": "new_snippet" },
 
     // Move buffers between groups
     { "keys": ["super+ctrl+shift+u"], "command": "move_to_neighboring_group" },
